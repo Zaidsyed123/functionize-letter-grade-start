@@ -15,7 +15,17 @@ function btnClicked() {
   let mathPercent = +document.getElementById('math-percent').value;
   let sciPercent = +document.getElementById('sci-percent').value;
 
-  // Calculate & Output Letter Grades
+  // Calculate and Output Letter Grades ZAID
+  document.getElementById('eng-percentage').innerHTML = calcPercentage(engPercent, socPercent);
+  document.getElementById('math-percentage').innerHTML = calcPercentage(mathPercent, sciPercent);
+  // Calculate & Output Letter Grades (zaid)
+  function calcPercentage(percentage, engLetter) {
+    let percentage =0;
+    if(percentage >=65) {
+      let engLetter = "F";
+    } else if (percentage > 50)
+  }
+  document.getElementById('eng-letter').innerHTML = engLetter;
   // English
   let engLetter;
   if (engPercent >= 80) {
