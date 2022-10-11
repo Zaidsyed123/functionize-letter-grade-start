@@ -25,17 +25,16 @@ function btnClicked() {
 function percentToLetter(percentGrade) {
   let letterGrade;
   if (percentGrade >= 80) {
-    letterGrade = 'A';
+    return 'A';
   } else if (percentGrade >= 65) {
-   letterGrade = 'B';
+   return 'B';
   } else if (percentGrade >= 55) {
-   letterGrade = 'C';
+   return 'C';
   } else if (percentGrade >= 50) {
-    letterGrade = 'D';
+    return 'D';
   } else {
-    letterGrade = 'F';
+    return 'F';
   }
-return letterGrade;
 }
 
 
